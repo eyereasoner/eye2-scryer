@@ -11,7 +11,7 @@ FAILED=0
 echo -e "${YELLOW}-----------------------${NORMAL}"
 echo -e "${YELLOW}Running eye2-scryer etc${NORMAL}"
 echo -e "${YELLOW}eye2-scryer $(eye2-scryer 2>&1 | grep eye2-scryer | awk '{ print $2 }')${NORMAL}"
-echo -e "${YELLOW}scryer $(tpl --version 2>&1 | awk '{ print $NF }' | awk -F '-' '{print $1}')${NORMAL}"
+echo -e "${YELLOW}scryer $(scryer-prolog --version 2>&1 | awk '{ print $NF }' | awk -F '-' '{print $1}')${NORMAL}"
 echo -e "${YELLOW}-----------------------${NORMAL}"
 echo ""
 
